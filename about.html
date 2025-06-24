@@ -1,54 +1,88 @@
-
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Despre Ionel Stan</title>
+    <title>About Me – Ionel Stan</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #fafafa;
+            background: #fdfdfd;
             color: #333;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
         }
-        header {
+        nav {
             background-color: #222;
             color: white;
-            padding: 2rem;
-            text-align: center;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            margin-left: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 2rem auto;
             padding: 2rem;
             background: white;
             border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
         }
-        h1 {
-            margin-top: 0;
+        .content {
+            flex: 1;
+            min-width: 280px;
         }
-        a {
-            color: #007bff;
+        img.profile {
+            max-width: 200px;
+            border-radius: 10px;
+        }
+        .buttons a {
+            display: inline-block;
+            margin-top: 1rem;
+            margin-right: 1rem;
+            padding: 0.6rem 1.2rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .buttons a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Despre mine</h1>
-    </header>
+    <nav>
+        <div><strong>Ionel Stan</strong></div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+        </div>
+    </nav>
     <main>
-        <p>Salut! Mă numesc <strong>Ionel Stan</strong> și sunt pasionat de programare, tehnologie și dezvoltare software. Sunt student în domeniul IT și îmi place să creez aplicații utile și bine structurate.</p>
-
-        <p>Îmi doresc să devin <strong>Software Engineer specializat în Inteligență Artificială</strong> și investesc constant în învățare și proiecte practice.</p>
-
-        <p>🔧 Tehnologii preferate: C#, MySQL, HTML/CSS, Flask, GitHub, Cisco Networking</p>
-
-        <p>📫 Mă poți contacta pe LinkedIn sau pe email (opțional putem adăuga linkuri mai jos).</p>
-
-        <p><a href="index.html">← Înapoi la pagina principală</a></p>
+        <div class="content">
+            <h1>About Me</h1>
+            <p>Hello! I’m <strong>Ionel Stan</strong>, an aspiring software engineer with a passion for programming, technology, and Artificial Intelligence. I’m currently studying IT and working on various practical projects.</p>
+            <p>My focus is on clean, functional software that solves real-world problems. I'm experienced with languages like C#, MySQL, HTML/CSS, and tools like GitHub and Cisco Packet Tracer.</p>
+            <div class="buttons">
+                <a href="mailto:your.email@example.com">Contact Me</a>
+                <a href="IonelStan-CV.pdf" download>Download CV</a>
+            </div>
+        </div>
+        <div>
+            <img src="https://via.placeholder.com/200x250.png?text=Ionel+Stan" alt="Ionel Stan" class="profile">
+        </div>
     </main>
 </body>
 </html>
