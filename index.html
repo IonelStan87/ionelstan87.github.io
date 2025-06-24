@@ -1,81 +1,108 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ionel Stan | Portofoliu</title>
+    <title>Ionel Stan – Software Projects Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6f8;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
         header {
-            background-color: #222;
+            background-color: #0c2d57;
             color: white;
-            padding: 2rem 1rem;
+            padding: 1.5rem;
+            text-align: center;
         }
-        h1 {
-            margin: 0;
+        nav {
+            background-color: #1a3c6d;
+            padding: 0.8rem;
+            text-align: center;
         }
-        .container {
-            max-width: 900px;
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 1000px;
             margin: 2rem auto;
-            padding: 1rem;
-        }
-        .project {
+            padding: 2rem;
             background: white;
             border-radius: 10px;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
-        .project h2 {
-            margin-top: 0;
+        h1, h2 {
+            color: #0c2d57;
         }
-        .project a {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.6rem 1.2rem;
-            background: #007bff;
-            color: white;
+        ul {
+            line-height: 1.8;
+        }
+        a.project-link {
+            color: #007bff;
             text-decoration: none;
-            border-radius: 5px;
         }
-        .project a:hover {
-            background: #0056b3;
+        a.project-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #777;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Portofoliul lui Ionel Stan</h1>
-        <p>Proiecte dezvoltate cu pasiune și dedicare</p>
+        <h1>Ionel Stan</h1>
+        <p>Software Developer – GitHub Portfolio</p>
     </header>
-    <div class="container">
-        <div class="project">
-            <h2>Student Record System</h2>
-            <p>O aplicație pentru gestionarea datelor studenților.</p>
-            <a href="https://github.com/IonelStan87/student-record-system" target="_blank">Vezi pe GitHub</a>
-        </div>
-        <div class="project">
-            <h2>Console Apps (C#)</h2>
-            <p>Aplicații de consolă scrise în C# pentru diverse funcționalități.</p>
-            <a href="https://github.com/IonelStan87/console-apps-csharp" target="_blank">Vezi pe GitHub</a>
-        </div>
-        <div class="project">
-            <h2>Access Control System</h2>
-            <p>Proiect de securitate pentru controlul accesului fizic sau digital.</p>
-            <a href="https://github.com/IonelStan87/access-control-system" target="_blank">Vezi pe GitHub</a>
-        </div>
-        <div class="project">
-            <h2>Coursework Database (MySQL)</h2>
-            <p>Sistem de gestionare a temelor și cursurilor folosind MySQL.</p>
-            <a href="https://github.com/IonelStan87/coursework-database-mysql" target="_blank">Vezi pe GitHub</a>
-        </div>
-    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+    </nav>
+    <main>
+        <h2>📁 Project Portfolio</h2>
+        <ul>
+            <li>
+                <a href="https://github.com/IonelStan87/student-record-system" class="project-link" target="_blank">
+                    Student Record System
+                </a> – A C# application to manage student data.
+            </li>
+            <li>
+                <a href="https://github.com/IonelStan87/console-apps-csharp" class="project-link" target="_blank">
+                    Console Apps in C#
+                </a> – Mini-programs built in C# for learning and experimentation.
+            </li>
+            <li>
+                <a href="https://github.com/IonelStan87/access-control-system" class="project-link" target="_blank">
+                    Access Control System
+                </a> – Simulated system to control user access and permissions.
+            </li>
+            <li>
+                <a href="https://github.com/IonelStan87/coursework-database-mysql" class="project-link" target="_blank">
+                    Coursework Database (MySQL)
+                </a> – A MySQL database system for tracking coursework and assignments.
+            </li>
+        </ul>
+
+        <h2>🌐 Visit My GitHub Profile</h2>
+        <p>
+            <a href="https://github.com/IonelStan87" target="_blank" class="project-link">
+                github.com/IonelStan87
+            </a>
+        </p>
+    </main>
+    <footer>
+        &copy; 2025 Ionel Stan. All rights reserved.
+    </footer>
 </body>
 </html>
